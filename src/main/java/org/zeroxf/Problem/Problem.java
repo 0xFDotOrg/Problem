@@ -32,9 +32,10 @@ public class Problem extends JavaPlugin
     
     protected enum Status {
         NONE, NEW, SEEN, ASSIGNED, IN_PROGRESS,
-        WAIT_USER, WAIT_MOD, WAIT_ADMIN,
-        WAIT_OTHER, REOPENED, CLOSED_NORMAL,
-        CLOSED_SPAM, CLOSED_DUPLICATE, CLOSED_OTHER
+        WAIT_USER, WAIT_MOD, WAIT_ADMIN, WAIT_OTHER,
+        REPLY_USER, REPLY_ASSIGNEE, REPLY_OTHER,
+        CLOSED_NORMAL, CLOSED_SPAM, CLOSED_DUPLICATE,
+        CLOSED_OTHER, REOPENED
     }
     
     @Override
