@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import org.bukkit.entity.Player;
 
 /**
  *
@@ -63,5 +64,20 @@ public class ProblemSQL {
     protected ProblemTicket[] findTicketsByAssignee(String assignee, String status, int num)
     {
         
-    } 
+    }
+    
+    protected boolean addTicket(Player player, String message)
+    {
+        
+    }
+    
+    protected boolean addComment(ProblemTicket ticket, Player player, String message)
+    {
+        
+    }
+    
+    protected boolean updateStatus(ProblemTicket ticket, Player player, String status)
+    {
+        
+    }
 }
