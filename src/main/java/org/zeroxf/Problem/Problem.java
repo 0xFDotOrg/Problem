@@ -30,6 +30,13 @@ public class Problem extends JavaPlugin
     protected String pluginGameTag;
     protected String pluginConTag;
     
+    protected enum Status {
+        NONE, NEW, SEEN, ASSIGNED, IN_PROGRESS,
+        WAIT_USER, WAIT_MOD, WAIT_ADMIN,
+        WAIT_OTHER, REOPENED, CLOSED_NORMAL,
+        CLOSED_SPAM, CLOSED_DUPLICATE, CLOSED_OTHER
+    }
+    
     @Override
     public void onEnable()
     {

@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import org.bukkit.entity.Player;
+import org.zeroxf.Problem.Problem.Status;
 
 /**
  *
@@ -39,29 +40,29 @@ public class ProblemSQL {
         
     }
     
-    protected ProblemTicket findTicket(String searchterm, String status)
+    protected ProblemTicket findTicket(String searchterm, Status status)
     {
         
     }
-    protected ProblemTicket[] findTicket(String searchterm, String status, int num)
+    protected ProblemTicket[] findTicket(String searchterm, Status status, int num)
     {
         
     }
     
-    protected ProblemTicket[] findTicketsByOwner(String owner, String status)
+    protected ProblemTicket[] findTicketsByOwner(String owner, Status status)
     {
         
     }
-    protected ProblemTicket[] findTicketsByOwner(String owner, String status, int num)
+    protected ProblemTicket[] findTicketsByOwner(String owner, Status status, int num)
     {
         
     }
    
-    protected ProblemTicket[] findTicketsByAssignee(String assignee, String status)
+    protected ProblemTicket[] findTicketsByAssignee(String assignee, Status status)
     {
         
     }
-    protected ProblemTicket[] findTicketsByAssignee(String assignee, String status, int num)
+    protected ProblemTicket[] findTicketsByAssignee(String assignee, Status status, int num)
     {
         
     }
@@ -76,7 +77,7 @@ public class ProblemSQL {
         
     }
     
-    protected boolean updateStatus(ProblemTicket ticket, Player player, String status)
+    protected boolean updateStatus(ProblemTicket ticket, Player player, Status status)
     {
         
     }

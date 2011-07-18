@@ -11,7 +11,6 @@ public class ProblemTicket {
     private String owner;
     private String assignee;
     private int time;
-    private String status;
     private ProblemComment[] comments;
     
     public ProblemTicket()
@@ -20,17 +19,15 @@ public class ProblemTicket {
         this.owner = null;
         this.assignee = null;
         this.time = -1;
-        this.status = null;
         this.comments = new ProblemComment[32];
     }
     
-    public ProblemTicket(int ticketId, String owner, String assignee, int time, String status, ProblemComment[] comments)
+    public ProblemTicket(int ticketId, String owner, String assignee, int time, ProblemComment[] comments)
     {
         this.setTicketId(ticketId);
         this.setOwner(owner);
         this.setAssignee(assignee);
         this.setTime(time);
-        this.setStatus(status);
         this.comments = new ProblemComment[32];
         this.setComments(comments);
     }
@@ -69,15 +66,6 @@ public class ProblemTicket {
     protected final void setTime(int time)
     {
         this.time = time;
-    }
-    
-    protected String getStatus()
-    {
-        return this.status;
-    }
-    protected final void setStatus(String status)
-    {
-        this.status = status;
     }
     
     protected ProblemComment[] getComments()

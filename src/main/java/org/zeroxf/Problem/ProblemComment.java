@@ -1,6 +1,7 @@
 package org.zeroxf.Problem;
 
 import org.bukkit.Location;
+import org.zeroxf.Problem.Problem.Status;
 
 /**
  * Data class to hold a comment relating to a problem ticket.
@@ -12,6 +13,7 @@ public class ProblemComment {
     private String name;
     private int time;
     private String comment;
+    private Status status;
     private Location location;
     
     /**
@@ -22,6 +24,7 @@ public class ProblemComment {
         this.name = null;
         this.time = -1;
         this.comment = null;
+        this.status = null;
         this.location = null;
     }
     
@@ -37,14 +40,18 @@ public class ProblemComment {
      * @param comment
      * The body of the comment.
      * 
+     * @param status
+     * The new status of the comment, or NONE for none.
+     * 
      * @param location  
      * The location at which the comment was submitted.
      */
-    public ProblemComment(String name, int time, String comment, Location location)
+    public ProblemComment(String name, int time, String comment, Status status, Location location)
     {
         this.setName(name);
         this.setTime(time);
         this.setComment(comment);
+        this.setStatus(status);
         this.setLocation(location);
     }
     
@@ -65,6 +72,15 @@ public class ProblemComment {
     {
         this.time = time;
     }
+    
+    protected Status getStatus()
+    {
+        return this.status;
+    }
+    protected final void setStatus(Status status)
+    {
+        this.status = status;
+    }   
     
     protected String getComment()
     {
