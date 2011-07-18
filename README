@@ -1,0 +1,3 @@
+Problem is a new in-game petition system for Bukkit and Minecraft.
+
+Its primary focus is on larger servers with many petitions needing to be answered both in- and out- of the game.  As such, its primary storage method is MySQL and can be tied into a web interface easily.
