@@ -1,0 +1,12 @@
+name: Problem
+main: org.zeroxf.Problem.Problem
+version: 0.0.1
+authors:
+  - necavi
+  - gothroach
+commands:
+  problem:
+    description: General Problem command.
+    usage: /problem 
+    aliases: ['pe']
+
