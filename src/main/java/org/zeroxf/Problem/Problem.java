@@ -14,7 +14,7 @@ import org.bukkit.event.Event.Priority;
 import org.bukkit.plugin.PluginManager;
 
 /**
- * The main SlotGroups class, handles everything not broken out yet.
+ * @author necavi
  * @author gothroach
  */
 
