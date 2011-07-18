@@ -7,6 +7,7 @@ package org.zeroxf.Problem;
  * @author gothroach
  */
 public class ProblemTicket {
+    private int ticketId;
     private String owner;
     private String assignee;
     private int time;
@@ -15,6 +16,7 @@ public class ProblemTicket {
     
     public ProblemTicket()
     {
+        this.ticketId = -1;
         this.owner = null;
         this.assignee = null;
         this.time = -1;
@@ -22,14 +24,24 @@ public class ProblemTicket {
         this.comments = new ProblemComment[32];
     }
     
-    public ProblemTicket(String owner, String assignee, int time, String status, ProblemComment[] comments)
+    public ProblemTicket(int ticketId, String owner, String assignee, int time, String status, ProblemComment[] comments)
     {
+        this.setTicketId(ticketId);
         this.setOwner(owner);
         this.setAssignee(assignee);
         this.setTime(time);
         this.setStatus(status);
         this.comments = new ProblemComment[32];
         this.setComments(comments);
+    }
+    
+    protected int getTicketId()
+    {
+        return this.ticketId;
+    }
+    protected final void setTicketId(int ticketId)
+    {
+        this.ticketId = ticketId;
     }
     
     protected String getOwner()
