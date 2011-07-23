@@ -13,7 +13,7 @@ import org.bukkit.event.Event;
 import org.bukkit.event.Event.Priority;
 import org.bukkit.plugin.PluginManager;
 
-/**
+/** 
  * @author necavi
  * @author gothroach
  */
